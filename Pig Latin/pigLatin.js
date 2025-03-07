@@ -59,10 +59,10 @@ array.forEach((word) => {
   } else if (isConsonant(text[0]) && isConsonant(text[1])) {
     firstLetter = text.shift().toLowerCase();
     secondLetter = text.shift().toLowerCase();
-    console.log(text);
+    //console.log(text);
     text.forEach((letter) => (newWord = newWord + letter));
     newWord = newWord + firstLetter + secondLetter + "ay";
-  } else {
+  } else if (isVowel(text[0])) {
     newWord = word + "way";
   }
   if (flag) {
