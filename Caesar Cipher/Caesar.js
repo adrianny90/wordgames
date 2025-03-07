@@ -55,17 +55,15 @@ const Cipher = [
   "W",
 ];
 const howBig = process.argv.length - 2;
-console.log(howBig);
-console.log(process.argv[howBig + 1]);
 const shift = process.argv[howBig + 1];
 //check if last parameter for shift is a number
 const check = Number(shift);
-if (Number.isInteger(check)) {
-  console.log("OK");
-} else {
-  console.log("NOT");
-}
-console.log(typeof plain[2]);
+// if (Number.isInteger(check)) {
+//   console.log("OK");
+// } else {
+//   console.log("NOT");
+// }
+//console.log(typeof plain[2]);
 //building proper array only with text
 let i = 2;
 const array = [];
@@ -73,7 +71,7 @@ while (i < howBig + 1) {
   array.push(process.argv[i].toLowerCase());
   i++;
 }
-console.log(array);
+//console.log(array);
 const newArray = [];
 array.forEach((element) => {
   word = "";
@@ -99,7 +97,8 @@ array.forEach((element) => {
   });
   newArray.push(word.toLowerCase());
 });
-console.log(newArray);
+const consoleOutput = newArray.join(" ");
+console.log(consoleOutput);
 
 //It translate Plain into Cipher
 // array.forEach((element) => {
