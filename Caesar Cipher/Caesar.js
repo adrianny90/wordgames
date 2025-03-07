@@ -26,43 +26,44 @@ const plain = [
   "Y",
   "Z",
 ];
-const Cipher = [
-  "X",
-  "Y",
-  "Z",
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-];
+// const Cipher = [
+//   "X",
+//   "Y",
+//   "Z",
+//   "A",
+//   "B",
+//   "C",
+//   "D",
+//   "E",
+//   "F",
+//   "G",
+//   "H",
+//   "I",
+//   "J",
+//   "K",
+//   "L",
+//   "M",
+//   "N",
+//   "O",
+//   "P",
+//   "Q",
+//   "R",
+//   "S",
+//   "T",
+//   "U",
+//   "V",
+//   "W",
+// ];
 const howBig = process.argv.length - 2;
+//console.log(howBig);
 const shift = process.argv[howBig + 1];
 //check if last parameter for shift is a number
 const check = Number(shift);
-// if (Number.isInteger(check)) {
-//   console.log("OK");
-// } else {
-//   console.log("NOT");
-// }
+if (Number.isInteger(check)) {
+  //console.log("OK");
+} else {
+  console.log("please type in last word as digit");
+}
 //console.log(typeof plain[2]);
 //building proper array only with text
 let i = 2;
